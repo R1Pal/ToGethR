@@ -58,8 +58,8 @@ class TasksController < ApplicationController
   def mark_as_done
     @task = Task.find(params[:id])
     # raise
+    current_user.score += @task.base_score unless (@task.base_score.nil? || @task.status == "done")
     @task.update(status: "done")
-    current_user.score += @task.base_score unless @task.base_score.nil?
     redirect_to task_path(@task), notice: "Status updated to #{@task.status}"
   end
 
