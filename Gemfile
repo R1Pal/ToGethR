@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 ruby "3.1.2"
 
+gem "simple_calendar"
+
 gem "cloudinary"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
