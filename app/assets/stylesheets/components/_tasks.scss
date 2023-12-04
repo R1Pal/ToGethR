@@ -1,0 +1,38 @@
+.my-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #ACACAC;
+}
+
+.my-tasks:hover {
+  border: 1px solid #ACACAC;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fa-circle-dot {
+  color: #BB4C28;
+}
+
+.task-picture {
+  width: 100%;
+  object-fit: content;
+}
+
+.task-card {
+  position: relative;
+}
+
+.delete-task {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.link-button {
+  padding: 6px 12px;
+}
